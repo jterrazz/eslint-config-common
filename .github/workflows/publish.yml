@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  build-package:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,8 +15,8 @@ jobs:
           node-version: 16
       - run: yarn install
 
-  publish-gpr:
-    needs: build
+  publish-package:
+    needs: build-package
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
