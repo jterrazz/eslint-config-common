@@ -1,6 +1,5 @@
 module.exports = {
     extends: [
-        'plugin:storybook/recommended',
         'next/core-web-vitals',
         'plugin:@typescript-eslint/recommended',
         'plugin:prettier/recommended',
@@ -15,11 +14,6 @@ module.exports = {
         'sort-imports-es6-autofix',
     ],
     rules: {
-        '@typescript-eslint/explicit-function-return-type': 'off',
-        '@typescript-eslint/no-empty-function': [
-            'error',
-            { allow: ['arrowFunctions'] },
-        ],
         'prettier/prettier': [
             'warn',
             {
